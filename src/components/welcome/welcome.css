@@ -1,0 +1,30 @@
+@import "../../index.css";
+section.welcome {
+  background-color: var(--clr-light-pink);
+  min-height: calc(100vh - 70px);
+}
+.image {
+  width: 100%;
+  max-width: 100%;
+}
+.image img {
+  width: 50%;
+}
+h2 {
+  font-size: 50px;
+}
+p {
+  color: var(--clr-dark);
+}
+.btn.welcome-btn {
+  background-color: var(--clr-pink);
+  margin-right: auto;
+}
+.btn.welcome-btn:hover {
+  background-color: #fff;
+  color: var(--clr-pink) !important;
+}
+.text {
+  align-items: center;
+  flex-direction: column;
+}

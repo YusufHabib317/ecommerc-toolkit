@@ -1,0 +1,150 @@
+@import "../../index.css";
+.navbar > * {
+  transition: 0.2s;
+}
+.navbar {
+  background-color: var(--clr-bg-nav);
+  height: 70px;
+  position: relative;
+}
+.navbar li {
+  margin-left: 5px;
+}
+.navbar a {
+  border-radius: 10px;
+  font-weight: 700;
+}
+.navbar a.active,
+.navbar a:hover {
+  background-color: #fff;
+  color: var(--clr-pink) !important;
+}
+.navbar-brand {
+  color: var(--clr-pink);
+}
+.navbar-brand:hover {
+  color: var(--clr-pink);
+}
+
+.navbar-collapse {
+  background-color: var(--clr-bg-nav);
+}
+.navbar-collapse li a {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 10px;
+}
+.navbar-toggler {
+  font-size: 30px;
+  border: none;
+  color: var(--clr-pink);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.search-icons {
+  border-left: 1px solid var(--clr-pink);
+  padding-left: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #000;
+}
+.login,
+.cart {
+  font-size: 20px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #000;
+}
+.login:hover,
+.cart:hover {
+  transform: scale(1.15);
+}
+
+.login:hover,
+.cart:hover,
+.search-icons:hover {
+  color: var(--clr-pink);
+}
+.cart {
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  text-align: center;
+  background-color: #ed7b7b;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: -5px;
+  right: -12px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.searsh {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+}
+.searshInput {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+.ul {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.searshInput span a {
+  color: var(--clr-pink);
+}
+@media screen and (max-width: 769px) {
+  .searshInput {
+    position: absolute;
+    top: 162px;
+    right: 90px;
+  }
+  .searshInput input {
+    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .searshInput span {
+    position: absolute;
+    top: 173px;
+    right: 100px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .searshInput input {
+    /* width: 50%;
+    display: inline-block;
+    margin: 0 auto; */
+  }
+  .searshInput span {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+  }
+
+  .searshInput {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+  }
+}
+a {
+  color: inherit;
+}

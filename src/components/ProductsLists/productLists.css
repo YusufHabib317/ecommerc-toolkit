@@ -1,0 +1,58 @@
+@import "../../index.css";
+section.products {
+  background-color: #fff;
+}
+.image-card {
+  width: 100%;
+  height: 100%;
+}
+.image-card img {
+  width: 100%;
+  height: 15rem;
+}
+.category {
+  font-size: 15px;
+}
+.discount {
+  font-size: 13px;
+}
+.price.old {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+.price.new {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--clr-green);
+}
+.showProduct {
+  border: none !important;
+  background-color: var(--clr-pink);
+  color: #fff;
+}
+a.showProduct:hove {
+  background-color: var(--clr-light-pink);
+}
+.item {
+  font-weight: 600;
+  box-shadow: 0 0 2px var(--clr-green);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  padding: 5px;
+  font-size: 15px;
+}
+.item:hover {
+  box-shadow: 0 0 5px #095c11;
+}
+.content {
+  justify-content: center;
+}
+@media screen and (min-width: 550px) {
+  .item {
+    font-size: 17px;
+    padding: 2px;
+  }
+}

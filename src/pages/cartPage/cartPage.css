@@ -1,0 +1,52 @@
+@import "../../index.css";
+.span {
+  display: inline-block;
+  margin-right: 10px;
+}
+th {
+  text-align: center;
+}
+.span.inc {
+  color: var(--clr-pink);
+}
+.span {
+  cursor: pointer;
+  font-size: 18px;
+}
+.trash {
+  font-size: 17px;
+  color: red;
+  cursor: pointer;
+}
+
+.clear button {
+  font-size: 18px;
+  background-color: red;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+}
+.empty h2 {
+  margin-bottom: 15px;
+}
+.empty button {
+  font-size: 18px;
+  background-color: var(--clr-pink);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+}
+.chekOut button {
+  background-color: var(--clr-pink);
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+}
+
+.goShop a {
+  color: #fff;
+}

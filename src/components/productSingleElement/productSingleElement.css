@@ -1,0 +1,101 @@
+@import "../../index.css";
+.productSingle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: beige;
+}
+.thumbnail-product {
+  text-align: center;
+}
+.image-product {
+  text-align: center;
+  width: 150px;
+  height: 130px;
+  border: 1px solid black;
+}
+.image-product img {
+  width: 100%;
+  height: 100%;
+}
+.product-description {
+  position: relative;
+}
+.verLine {
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: var(--clr-pink);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.brand {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.product-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.oldPrice {
+  text-decoration: line-through;
+  color: var(--clr-gray);
+  margin-right: 10px;
+}
+.pink {
+  color: var(--clr-pink);
+}
+.productPrice {
+  padding: 20px;
+  background-color: #edc5d1;
+}
+.newPrice {
+  color: var(--clr-green);
+  font-size: 30px;
+}
+.indec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.indec .up,
+.indec .down {
+  padding: 10px;
+  border: none;
+  background-color: beige;
+}
+.up svg,
+.down svg {
+  font-size: 20px;
+}
+.up {
+  margin-left: 10px;
+}
+.q {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+.quantity {
+  justify-content: center;
+}
+.buttons button {
+  background-color: beige;
+  padding: 10px;
+  border: 1px solid var(--clr-pink);
+  border-radius: 10px;
+  color: var(--clr-pink);
+  transition: 0.2s;
+  font-weight: 600;
+}
+.buttons button:nth-child(2) {
+  margin-left: 15px;
+}
+.buttons button:hover {
+  color: #fff;
+  background-color: var(--clr-pink);
+}
