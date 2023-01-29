@@ -9,11 +9,8 @@ import ProductSingleElement from "./components/productSingleElement/ProductSingl
 
 import { store } from "./feature/store";
 import { Provider } from "react-redux";
-import { fetchProduct, fetchProductSingle } from "./feature/productSlice";
-import {
-  fetchCategory,
-  fetchProductsOfCategory,
-} from "./feature/categorySlice";
+import { fetchProduct } from "./feature/productSlice";
+import { fetchCategory } from "./feature/categorySlice";
 import CartPage from "./pages/cartPage/CartPage";
 import ProductOfCategory from "./pages/productOfCategoru/ProductOfCategory";
 import SearchProduct from "./pages/searchProduct/SearchProduct";
@@ -28,14 +25,23 @@ store.dispatch(getTotals());
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ecommerc-toolkit",
     element: <Root />,
     children: [
       { index: true, element: <Index /> },
-      { path: "/products/:id", element: <ProductSingleElement /> },
-      { path: "/cart", element: <CartPage /> },
-      { path: "/products/category/:category", element: <ProductOfCategory /> },
-      { path: "/search/:searchTerm", element: <SearchProduct /> },
+      {
+        path: "ecommerc-toolkit/products/:id",
+        element: <ProductSingleElement />,
+      },
+      { path: "ecommerc-toolkit/cart", element: <CartPage /> },
+      {
+        path: "ecommerc-toolkit/products/category/:category",
+        element: <ProductOfCategory />,
+      },
+      {
+        path: "ecommerc-toolkit/search/:searchTerm",
+        element: <SearchProduct />,
+      },
     ],
   },
 ]);

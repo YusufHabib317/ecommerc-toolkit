@@ -40,7 +40,7 @@ const CartPage = () => {
           <div className="empty">
             <h2>The Cart Is Empty</h2>
             <button className="goShop">
-              <Link to="/">Go Shopping Now</Link>
+              <Link to="/ecommerc-toolkit">Go Shopping Now</Link>
             </button>
           </div>
         </div>

@@ -16,7 +16,7 @@ const SearchProduct = () => {
   useEffect(() => {
     dispatch(clearSearch());
     dispatch(fetchSearch(searchTerm));
-  }, [searchTerm]);
+  }, [searchTerm, dispatch]);
 
   return (
     <section>
@@ -33,7 +33,7 @@ const SearchProduct = () => {
               <div key={index} className="col-md-6 col-lg-4 col-12">
                 <div className="product-cart card m-2">
                   <div className="image-card">
-                    <img src={item.thumbnail} className="card-img-top" />
+                    <img src={item.thumbnail} className="card-img-top" alt="" />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">{item.title}</h5>
@@ -47,7 +47,7 @@ const SearchProduct = () => {
                     </p>
                     <Link
                       className="showProduct p-2 rounded"
-                      to={`/products/${item.id}`}
+                      to={`ecommerc-toolkit/products/${item.id}`}
                     >
                       Show Product
                     </Link>

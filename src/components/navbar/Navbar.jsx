@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md ">
       <div className="container">
-        <Link className="navbar-brand p-1 fs-1" to="/">
+        <Link className="navbar-brand p-1 fs-1" to="/ecommerc-toolkit">
           Gifty
         </Link>
         <button
@@ -46,28 +46,28 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-1 p-lg-2"
                 aria-current="page"
-                to="/"
+                to="/ecommerc-toolkit"
               >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link p-1 p-lg-2" to="/">
+              <Link className="nav-link p-1 p-lg-2" to="/ecommerc-toolkit">
                 Shop
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link p-1 p-lg-2" to="/">
+              <Link className="nav-link p-1 p-lg-2" to="/ecommerc-toolkit">
                 Why Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link p-1 p-lg-2" to="/">
+              <Link className="nav-link p-1 p-lg-2" to="/ecommerc-toolkit">
                 Testimonial
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link p-1 p-lg-2" to="/">
+              <Link className="nav-link p-1 p-lg-2" to="/ecommerc-toolkit">
                 Contact Us
               </Link>
             </li>
@@ -99,7 +99,7 @@ const Navbar = () => {
             </div>
             <div className="cart ps-2 ms-3  d-md-block">
               <span>{itemsCount}</span>
-              <Link to="cart">
+              <Link to="ecommerc-toolkit/cart">
                 <HiShoppingBag />
               </Link>
             </div>
